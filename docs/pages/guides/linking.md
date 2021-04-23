@@ -261,7 +261,7 @@ The AASA must be served from `/.well-known/apple-app-site-association` (with no 
 }
 ```
 
-This tells iOS that any links to `https://www.myapp.io/records/*` (with wildcard matching for the record ID) should be opened directly by the app with ID `LKWJEF.io.myapp.example`. See [Apple's documentation](https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content/enabling_universal_links) for further details on the format of the AASA. Branch provides an [AASA validator](https://branch.io/resources/aasa-validator/) which can help you confirm that your AASA is correctly deployed and has a valid format.
+This tells iOS that any links to `https://www.myapp.io/records/*` (with wildcard matching for the record ID) should be opened directly by the app with ID `LKWJEF.io.myapp.example`. See [Apple's documentation](https://developer.apple.com/documentation/safariservices/supporting_associated_domains) for further details on the format of the AASA. Branch provides an [AASA validator](https://branch.io/resources/aasa-validator/) which can help you confirm that your AASA is correctly deployed and has a valid format.
 
 > The `*` wildcard does **not** match domain or path separators (periods and slashes).
 
